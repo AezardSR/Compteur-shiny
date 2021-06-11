@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#flex{
+    display: flex;
+    justify-content: center;
+}
+
+#countContainer{
+    width: 50%;
+    height: 300px;
+    text-align: center;
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+}
+
+#buttons{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#n{
+    grid-column: 1/4;
+    grid-row: 2;
+}
+#changeCount{
+    grid-column: 1/4;
+    grid-row: 3;
+}
+
+@media screen and (max-width: 998px) {
+    #countContainer{
+        width: 100%;
+    }
+    
+}
