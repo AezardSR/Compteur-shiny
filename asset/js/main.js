@@ -44,6 +44,9 @@ function changeCount(){
 
 function changeN(){
     n = parseInt(prompt('Rencontre par :'));
+    btnInc.value = '+'+n;
+    btnDec.value = '+'+n;
+    nbPRencontre.value = 'rencontre par '+n;
 }
 
 
